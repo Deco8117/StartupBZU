@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktfotos Frühlingskollektion – FrameFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body">
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">▶</span>
+                FrameFlow
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" title="Benachrichtigungen">
+                    🔔
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar">AK</div>
+                    <span class="user-name">Anna König</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="sidebar-link">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="projekt-erstellen.html" class="sidebar-link">
+                    <span class="sidebar-icon">➕</span>
+                    Neues Projekt
+                </a>
+                <a href="matching.html" class="sidebar-link">
+                    <span class="sidebar-icon">👥</span>
+                    Creators
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">💬</span>
+                    Nachrichten
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">📁</span>
+                    Dateien
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">⚙️</span>
+                    Einstellungen
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content">
+                <!-- Back Link -->
+                <a href="dashboard.html" class="back-link">← Zurück zum Dashboard</a>
+
+                <!-- Project Header -->
+                <div class="project-detail-header">
+                    <div class="project-detail-info">
+                        <div class="project-detail-title">
+                            <span class="project-type-badge">📸 Fotografie</span>
+                            <h1>Produktfotos Frühlingskollektion</h1>
+                        </div>
+                        <div class="project-detail-meta">
+                            <span class="project-status status-progress">In Arbeit</span>
+                            <span>Erstellt am 28. Januar 2025</span>
+                            <span>Budget: CHF 1'000 – 2'500</span>
+                        </div>
+                    </div>
+                    <div class="project-detail-actions">
+                        <button class="btn btn-outline">Bearbeiten</button>
+                        <button class="btn btn-primary">Feedback geben</button>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="project-progress-bar">
+                    <div class="progress-steps">
+                        <div class="progress-step completed">
+                            <span class="progress-step-icon">✓</span>
+                            <span class="progress-step-label">Briefing</span>
+                        </div>
+                        <div class="progress-step completed">
+                            <span class="progress-step-icon">✓</span>
+                            <span class="progress-step-label">Matching</span>
+                        </div>
+                        <div class="progress-step completed">
+                            <span class="progress-step-icon">✓</span>
+                            <span class="progress-step-label">Produktion</span>
+                        </div>
+                        <div class="progress-step active">
+                            <span class="progress-step-icon">4</span>
+                            <span class="progress-step-label">Review</span>
+                        </div>
+                        <div class="progress-step">
+                            <span class="progress-step-icon">5</span>
+                            <span class="progress-step-label">Abnahme</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-tab="overview">Übersicht</button>
+                    <button class="tab-btn" data-tab="briefing">Briefing</button>
+                    <button class="tab-btn" data-tab="files">Dateien <span class="tab-badge">8</span></button>
+                    <button class="tab-btn" data-tab="feedback">Feedback <span class="tab-badge">3</span></button>
+                    <button class="tab-btn" data-tab="communication">Kommunikation</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Overview Tab -->
+                    <div class="tab-pane active" data-tab="overview">
+                        <div class="project-detail-grid">
+                            <!-- Main Content -->
+                            <div class="project-detail-main">
+                                <!-- Status Card -->
+                                <div class="detail-card">
+                                    <div class="detail-card-header">
+                                        <h3>Aktueller Status</h3>
+                                        <span class="status-badge status-progress">In Arbeit</span>
+                                    </div>
+                                    <div class="status-timeline">
+                                        <div class="timeline-item completed">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <strong>Briefing erstellt</strong>
+                                                <span>28. Januar 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item completed">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <strong>Creator ausgewählt: Sarah Keller</strong>
+                                                <span>30. Januar 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item completed">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <strong>Shooting durchgeführt</strong>
+                                                <span>5. Februar 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item active">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <strong>Erste Bilder hochgeladen – Review ausstehend</strong>
+                                                <span>10. Februar 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <strong>Finale Abnahme</strong>
+                                                <span>Geplant: 15. Februar 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Recent Activity -->
+                                <div class="detail-card">
+                                    <div class="detail-card-header">
+                                        <h3>Letzte Aktivitäten</h3>
+                                    </div>
+                                    <div class="activity-list">
+                                        <div class="activity-item">
+                                            <div class="activity-avatar">SK</div>
+                                            <div class="activity-content">
+                                                <p><strong>Sarah Keller</strong> hat 5 neue Dateien hochgeladen</p>
+                                                <span class="activity-time">Vor 2 Stunden</span>
+                                            </div>
+                                        </div>
+                                        <div class="activity-item">
+                                            <div class="activity-avatar">SK</div>
+                                            <div class="activity-content">
+                                                <p><strong>Sarah Keller</strong> hat einen Kommentar hinterlassen: „Die ersten 5 Produktbilder sind fertig! Bitte um Feedback..."</p>
+                                                <span class="activity-time">Vor 2 Stunden</span>
+                                            </div>
+                                        </div>
+                                        <div class="activity-item">
+                                            <div class="activity-avatar">AK</div>
+                                            <div class="activity-content">
+                                                <p><strong>Sie</strong> haben das Briefing aktualisiert</p>
+                                                <span class="activity-time">Vor 3 Tagen</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sidebar -->
+                            <div class="project-detail-sidebar">
+                                <!-- Creator Card -->
+                                <div class="detail-card">
+                                    <div class="detail-card-header">
+                                        <h3>Creator</h3>
+                                    </div>
+                                    <a href="creator-profil.html" class="creator-card-compact">
+                                        <div class="creator-avatar-medium">SK</div>
+                                        <div class="creator-info-compact">
+                                            <strong>Sarah Keller</strong>
+                                            <span>Fotografin • Zürich</span>
+                                            <span class="creator-rating-small">★★★★★ 4.9</span>
+                                        </div>
+                                    </a>
+                                    <button class="btn btn-outline btn-block">Nachricht senden</button>
+                                </div>
+
+                                <!-- Project Details -->
+                                <div class="detail-card">
+                                    <div class="detail-card-header">
+                                        <h3>Details</h3>
+                                    </div>
+                                    <dl class="detail-list">
+                                        <dt>Deadline</dt>
+                                        <dd>15. Februar 2025</dd>
+                                        <dt>Budget</dt>
+                                        <dd>CHF 1'000 – 2'500</dd>
+                                        <dt>Lieferobjekte</dt>
+                                        <dd>15 Produktfotos, bearbeitet</dd>
+                                        <dt>Korrekturen</dt>
+                                        <dd>1 von 2 verwendet</dd>
+                                    </dl>
+                                </div>
+
+                                <!-- Quick Actions -->
+                                <div class="detail-card">
+                                    <div class="detail-card-header">
+                                        <h3>Schnellaktionen</h3>
+                                    </div>
+                                    <div class="quick-actions">
+                                        <button class="btn btn-outline btn-block">📁 Alle Dateien laden</button>
+                                        <button class="btn btn-outline btn-block">📋 Briefing exportieren</button>
+                                        <button class="btn btn-outline btn-block">💳 Zahlung auslösen</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Briefing Tab -->
+                    <div class="tab-pane" data-tab="briefing">
+                        <div class="detail-card">
+                            <div class="detail-card-header">
+                                <h3>Projekt-Briefing</h3>
+                                <button class="btn btn-outline btn-small">Bearbeiten</button>
+                            </div>
+                            <div class="briefing-content">
+                                <section class="briefing-section">
+                                    <h4>Projektbeschreibung</h4>
+                                    <p>Wir benötigen hochwertige Produktbilder für unsere neue Frühlingskollektion. Die Bilder werden im Online-Shop und auf Social Media verwendet. Insgesamt sollen 15 Produkte fotografiert werden.</p>
+                                </section>
+                                <section class="briefing-section">
+                                    <h4>Stil & Anforderungen</h4>
+                                    <ul>
+                                        <li>Weisser, cleaner Hintergrund</li>
+                                        <li>Natürliches Licht-Look</li>
+                                        <li>Minimalistisch und modern</li>
+                                        <li>Konsistenter Stil über alle Produkte</li>
+                                    </ul>
+                                </section>
+                                <section class="briefing-section">
+                                    <h4>Lieferobjekte</h4>
+                                    <ul>
+                                        <li>15 bearbeitete Produktfotos</li>
+                                        <li>Format: 3000x3000px (Quadrat)</li>
+                                        <li>Zusätzlich: 1080x1080px für Social Media</li>
+                                        <li>Dateiformat: JPG + PNG mit Transparenz</li>
+                                    </ul>
+                                </section>
+                                <section class="briefing-section">
+                                    <h4>Referenzen</h4>
+                                    <p>Siehe hochgeladene Inspirationsbilder. Wir mögen den Stil von Unternehmen wie Everlane und COS – clean, hell, hochwertig.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Files Tab -->
+                    <div class="tab-pane" data-tab="files">
+                        <div class="detail-card">
+                            <div class="detail-card-header">
+                                <h3>Projektdateien</h3>
+                                <div class="header-actions">
+                                    <select class="version-select">
+                                        <option>Alle Versionen</option>
+                                        <option>Version 2 (Aktuell)</option>
+                                        <option>Version 1</option>
+                                    </select>
+                                    <button class="btn btn-outline btn-small">Alle herunterladen</button>
+                                </div>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-card">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_01_v2.jpg</span>
+                                        <span class="file-card-meta">2.4 MB • 10.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge">v2</span>
+                                </div>
+                                <div class="file-card">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_02_v2.jpg</span>
+                                        <span class="file-card-meta">2.1 MB • 10.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge">v2</span>
+                                </div>
+                                <div class="file-card">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_03_v2.jpg</span>
+                                        <span class="file-card-meta">2.8 MB • 10.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge">v2</span>
+                                </div>
+                                <div class="file-card">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_04_v2.jpg</span>
+                                        <span class="file-card-meta">2.3 MB • 10.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge">v2</span>
+                                </div>
+                                <div class="file-card">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_05_v2.jpg</span>
+                                        <span class="file-card-meta">2.6 MB • 10.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge">v2</span>
+                                </div>
+                                <div class="file-card old-version">
+                                    <div class="file-preview" style="background: linear-gradient(135deg, #e0e0e0, #bdbdbd);">
+                                        <span>📷</span>
+                                    </div>
+                                    <div class="file-card-info">
+                                        <span class="file-card-name">Produkt_01_v1.jpg</span>
+                                        <span class="file-card-meta">2.2 MB • 08.02.2025</span>
+                                    </div>
+                                    <span class="file-version-badge old">v1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Tab -->
+                    <div class="tab-pane" data-tab="feedback">
+                        <div class="detail-card">
+                            <div class="detail-card-header">
+                                <h3>Feedback & Korrekturen</h3>
+                                <button class="btn btn-primary btn-small">+ Neues Feedback</button>
+                            </div>
+                            <div class="feedback-list">
+                                <div class="feedback-item resolved">
+                                    <div class="feedback-header">
+                                        <div class="feedback-info">
+                                            <span class="feedback-status status-resolved">✓ Erledigt</span>
+                                            <span class="feedback-date">08. Februar 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <p><strong>Feedback zu Produkt_01_v1.jpg:</strong></p>
+                                        <p>„Das Licht ist etwas zu hart. Könnten Sie die Schatten weicher machen? Ausserdem bitte den Hintergrund noch etwas aufhellen."</p>
+                                    </div>
+                                    <div class="feedback-response">
+                                        <div class="response-avatar">SK</div>
+                                        <div class="response-content">
+                                            <strong>Sarah Keller</strong>
+                                            <p>„Erledigt! Habe die Schatten angepasst und den Hintergrund aufgehellt. Die neue Version ist hochgeladen."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="feedback-header">
+                                        <div class="feedback-info">
+                                            <span class="feedback-status status-pending">⏳ Offen</span>
+                                            <span class="feedback-date">10. Februar 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <p><strong>Allgemeines Feedback:</strong></p>
+                                        <p>„Die Bilder sehen super aus! Bei Produkt 3 und 5 ist noch ein kleiner Fusseln zu sehen – könnten Sie das retuschieren?"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Communication Tab -->
+                    <div class="tab-pane" data-tab="communication">
+                        <div class="detail-card chat-card">
+                            <div class="detail-card-header">
+                                <h3>Projektkommunikation</h3>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="chat-message received">
+                                    <div class="chat-avatar">SK</div>
+                                    <div class="chat-bubble">
+                                        <span class="chat-sender">Sarah Keller</span>
+                                        <p>Hallo Anna! Ich habe mir das Briefing angeschaut. Alles klar soweit – ich hätte noch eine Frage zum Hintergrund: Soll es ein reines Weiss sein oder eher ein warmes Off-White?</p>
+                                        <span class="chat-time">30. Jan, 14:32</span>
+                                    </div>
+                                </div>
+                                <div class="chat-message sent">
+                                    <div class="chat-bubble">
+                                        <p>Hi Sarah! Freut mich, dass alles klar ist. Wir hätten gerne ein reines Weiss (#FFFFFF), damit es gut zum Shop-Design passt.</p>
+                                        <span class="chat-time">30. Jan, 15:10</span>
+                                    </div>
+                                </div>
+                                <div class="chat-message received">
+                                    <div class="chat-avatar">SK</div>
+                                    <div class="chat-bubble">
+                                        <span class="chat-sender">Sarah Keller</span>
+                                        <p>Perfekt, verstanden! Dann plane ich das Shooting für nächste Woche Mittwoch. Passt das für die Produktübergabe?</p>
+                                        <span class="chat-time">30. Jan, 15:15</span>
+                                    </div>
+                                </div>
+                                <div class="chat-message sent">
+                                    <div class="chat-bubble">
+                                        <p>Ja, Mittwoch passt super! Ich bringe die Produkte um 10 Uhr vorbei.</p>
+                                        <span class="chat-time">30. Jan, 15:45</span>
+                                    </div>
+                                </div>
+                                <div class="chat-date-divider">5. Februar 2025</div>
+                                <div class="chat-message received">
+                                    <div class="chat-avatar">SK</div>
+                                    <div class="chat-bubble">
+                                        <span class="chat-sender">Sarah Keller</span>
+                                        <p>Das Shooting war ein voller Erfolg! 📸 Ich mache mich jetzt an die Bearbeitung und lade die ersten Bilder bis Ende der Woche hoch.</p>
+                                        <span class="chat-time">5. Feb, 18:20</span>
+                                    </div>
+                                </div>
+                                <div class="chat-date-divider">10. Februar 2025</div>
+                                <div class="chat-message received">
+                                    <div class="chat-avatar">SK</div>
+                                    <div class="chat-bubble">
+                                        <span class="chat-sender">Sarah Keller</span>
+                                        <p>Die ersten 5 Produktbilder sind fertig! Ich habe sie gerade hochgeladen. Bitte schau sie dir an und gib mir Bescheid, ob die Richtung stimmt. 🙂</p>
+                                        <span class="chat-time">10. Feb, 11:45</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Nachricht schreiben...">
+                                <button class="btn btn-primary">Senden</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creators finden – FrameFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body">
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">▶</span>
+                FrameFlow
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" title="Benachrichtigungen">
+                    🔔
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar">AK</div>
+                    <span class="user-name">Anna König</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="sidebar-link">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="projekt-erstellen.html" class="sidebar-link">
+                    <span class="sidebar-icon">➕</span>
+                    Neues Projekt
+                </a>
+                <a href="matching.html" class="sidebar-link active">
+                    <span class="sidebar-icon">👥</span>
+                    Creators
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">💬</span>
+                    Nachrichten
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">📁</span>
+                    Dateien
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">⚙️</span>
+                    Einstellungen
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content">
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div>
+                        <h1>Creators finden</h1>
+                        <p class="text-muted">Entdecken Sie talentierte Creators für Ihr nächstes Projekt.</p>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label>Kategorie</label>
+                        <select id="filterCategory">
+                            <option value="">Alle Kategorien</option>
+                            <option value="foto">Fotografie</option>
+                            <option value="video">Video</option>
+                            <option value="social">Social Media</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Stil</label>
+                        <select id="filterStyle">
+                            <option value="">Alle Stile</option>
+                            <option value="minimalistisch">Minimalistisch</option>
+                            <option value="kreativ">Kreativ</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="lifestyle">Lifestyle</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Budget</label>
+                        <select id="filterBudget">
+                            <option value="">Alle Preisklassen</option>
+                            <option value="low">Bis CHF 1'000</option>
+                            <option value="medium">CHF 1'000 – 3'000</option>
+                            <option value="high">Über CHF 3'000</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Standort</label>
+                        <select id="filterLocation">
+                            <option value="">Überall</option>
+                            <option value="zuerich">Zürich</option>
+                            <option value="bern">Bern</option>
+                            <option value="basel">Basel</option>
+                            <option value="genf">Genf</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sortieren</label>
+                        <select id="filterSort">
+                            <option value="relevance">Relevanz</option>
+                            <option value="rating">Beste Bewertung</option>
+                            <option value="price-low">Preis: Niedrig zu Hoch</option>
+                            <option value="price-high">Preis: Hoch zu Niedrig</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Info -->
+                <div class="results-info">
+                    <span><strong>24</strong> Creators gefunden</span>
+                    <div class="view-toggle">
+                        <button class="view-btn active" title="Karten">▦</button>
+                        <button class="view-btn" title="Liste">☰</button>
+                    </div>
+                </div>
+
+                <!-- Creator Grid -->
+                <div class="creators-grid">
+                    <!-- Creator Card 1 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>SK</span>
+                            </div>
+                            <div class="creator-card-badge">Top Creator</div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Sarah Keller</h3>
+                            <p class="creator-card-specialty">Fotografin • Zürich</p>
+                            <p class="creator-card-desc">Spezialisiert auf Produktfotografie, Food und Lifestyle. Cleaner, moderner Stil.</p>
+                            <div class="creator-card-tags">
+                                <span>Produktfoto</span>
+                                <span>Food</span>
+                                <span>Lifestyle</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★★ <span>4.9</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 450
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Creator Card 2 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>TM</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Tim Müller</h3>
+                            <p class="creator-card-specialty">Videograf • Bern</p>
+                            <p class="creator-card-desc">Imagefilme, Produktvideos und Social Media Content. Dynamisch und professionell.</p>
+                            <div class="creator-card-tags">
+                                <span>Video</span>
+                                <span>Imagefilm</span>
+                                <span>Reels</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★★ <span>4.8</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 800
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Creator Card 3 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>LS</span>
+                            </div>
+                            <div class="creator-card-badge">Neu</div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Lisa Schmidt</h3>
+                            <p class="creator-card-specialty">Social Media Creator • Basel</p>
+                            <p class="creator-card-desc">Content-Pakete für Instagram, TikTok und LinkedIn. Kreativ und trendbewusst.</p>
+                            <div class="creator-card-tags">
+                                <span>Social Media</span>
+                                <span>Instagram</span>
+                                <span>TikTok</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★☆ <span>4.5</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 350
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Creator Card 4 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>MW</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Marco Weber</h3>
+                            <p class="creator-card-specialty">Fotograf & Videograf • Zürich</p>
+                            <p class="creator-card-desc">Allrounder für Foto und Video. Events, Portraits, Corporate Content.</p>
+                            <div class="creator-card-tags">
+                                <span>Foto</span>
+                                <span>Video</span>
+                                <span>Events</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★★ <span>4.7</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 550
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Creator Card 5 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>JH</span>
+                            </div>
+                            <div class="creator-card-badge">Top Creator</div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Julia Hofmann</h3>
+                            <p class="creator-card-specialty">Fotografin • Luzern</p>
+                            <p class="creator-card-desc">Fashion, Beauty und Editorial. Eleganter, zeitloser Stil mit Liebe zum Detail.</p>
+                            <div class="creator-card-tags">
+                                <span>Fashion</span>
+                                <span>Beauty</span>
+                                <span>Editorial</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★★ <span>5.0</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 750
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Creator Card 6 -->
+                    <a href="creator-profil.html" class="creator-card">
+                        <div class="creator-card-header">
+                            <div class="creator-avatar-card">
+                                <span>NK</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-body">
+                            <h3>Nico Keller</h3>
+                            <p class="creator-card-specialty">Drohnen-Pilot • St. Gallen</p>
+                            <p class="creator-card-desc">Luftaufnahmen für Immobilien, Events und Tourismus. Zertifizierter Drohnen-Pilot.</p>
+                            <div class="creator-card-tags">
+                                <span>Drohne</span>
+                                <span>Immobilien</span>
+                                <span>Luftbild</span>
+                            </div>
+                        </div>
+                        <div class="creator-card-footer">
+                            <div class="creator-card-rating">
+                                ★★★★☆ <span>4.6</span>
+                            </div>
+                            <div class="creator-card-price">
+                                ab CHF 600
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>←</button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <button class="pagination-btn">→</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

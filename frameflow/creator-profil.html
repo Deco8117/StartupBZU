@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Keller – Creator Profil – FrameFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body">
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">▶</span>
+                FrameFlow
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" title="Benachrichtigungen">
+                    🔔
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar">AK</div>
+                    <span class="user-name">Anna König</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="sidebar-link">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="projekt-erstellen.html" class="sidebar-link">
+                    <span class="sidebar-icon">➕</span>
+                    Neues Projekt
+                </a>
+                <a href="matching.html" class="sidebar-link active">
+                    <span class="sidebar-icon">👥</span>
+                    Creators
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">💬</span>
+                    Nachrichten
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">📁</span>
+                    Dateien
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">⚙️</span>
+                    Einstellungen
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content">
+                <!-- Back Link -->
+                <a href="matching.html" class="back-link">← Zurück zur Übersicht</a>
+
+                <!-- Creator Profile Header -->
+                <div class="creator-profile-header">
+                    <div class="creator-profile-main">
+                        <div class="creator-avatar-large">
+                            <span>SK</span>
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="creator-profile-info">
+                            <div class="creator-name-row">
+                                <h1>Sarah Keller</h1>
+                                <span class="verified-badge" title="Verifizierter Creator">✓</span>
+                            </div>
+                            <p class="creator-tagline">Fotografin für Produkte, Food & Lifestyle</p>
+                            <div class="creator-meta-row">
+                                <span>📍 Zürich, Schweiz</span>
+                                <span>📸 Seit 2019 auf FrameFlow</span>
+                                <span class="creator-rating-large">★★★★★ 4.9 (47 Bewertungen)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creator-profile-actions">
+                        <button class="btn btn-primary btn-large" onclick="showContactModal()">Creator anfragen</button>
+                        <button class="btn btn-outline">Nachricht senden</button>
+                    </div>
+                </div>
+
+                <!-- Profile Content -->
+                <div class="creator-profile-content">
+                    <!-- Left Column -->
+                    <div class="creator-profile-left">
+                        <!-- About -->
+                        <section class="profile-section">
+                            <h2>Über mich</h2>
+                            <p>Hallo! Ich bin Sarah, freiberufliche Fotografin mit Leidenschaft für ästhetische Produktbilder und authentischen Lifestyle-Content. Nach meinem Studium in Visueller Kommunikation habe ich über 5 Jahre Erfahrung in der Zusammenarbeit mit Start-ups, E-Commerce-Unternehmen und Gastro-Betrieben gesammelt.</p>
+                            <p>Mein Stil ist clean, modern und detailverliebt. Ich lege grossen Wert auf eine gute Vorbereitung und klare Kommunikation – so entstehen Bilder, die Ihre Produkte perfekt in Szene setzen.</p>
+                        </section>
+
+                        <!-- Portfolio -->
+                        <section class="profile-section">
+                            <h2>Portfolio</h2>
+                            <div class="portfolio-grid">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);">
+                                        <span class="portfolio-placeholder">📷</span>
+                                    </div>
+                                    <span class="portfolio-label">Produktfotografie</span>
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);">
+                                        <span class="portfolio-placeholder">🍕</span>
+                                    </div>
+                                    <span class="portfolio-label">Food Photography</span>
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
+                                        <span class="portfolio-placeholder">✨</span>
+                                    </div>
+                                    <span class="portfolio-label">Lifestyle</span>
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);">
+                                        <span class="portfolio-placeholder">🏢</span>
+                                    </div>
+                                    <span class="portfolio-label">Corporate</span>
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
+                                        <span class="portfolio-placeholder">🌿</span>
+                                    </div>
+                                    <span class="portfolio-label">Naturkosmetik</span>
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="portfolio-image" style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);">
+                                        <span class="portfolio-placeholder">👗</span>
+                                    </div>
+                                    <span class="portfolio-label">Fashion</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Reviews -->
+                        <section class="profile-section">
+                            <h2>Bewertungen</h2>
+                            <div class="reviews-list">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-author">
+                                            <div class="review-avatar">MH</div>
+                                            <div>
+                                                <strong>Michael Huber</strong>
+                                                <span class="review-project">Produktfotos für Online-Shop</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-rating">★★★★★</div>
+                                    </div>
+                                    <p class="review-text">„Sarah hat unsere Erwartungen übertroffen! Die Produktbilder sind perfekt für unseren Online-Shop. Schnelle Kommunikation, professionelle Arbeitsweise und ein tolles Ergebnis."</p>
+                                    <span class="review-date">Januar 2025</span>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-author">
+                                            <div class="review-avatar">LW</div>
+                                            <div>
+                                                <strong>Laura Weber</strong>
+                                                <span class="review-project">Food-Fotografie für Restaurant</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-rating">★★★★★</div>
+                                    </div>
+                                    <p class="review-text">„Die Zusammenarbeit war super unkompliziert. Sarah hat unsere Gerichte so in Szene gesetzt, dass man sie sofort probieren möchte. Absolute Empfehlung!"</p>
+                                    <span class="review-date">Dezember 2024</span>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-author">
+                                            <div class="review-avatar">TS</div>
+                                            <div>
+                                                <strong>Thomas Schneider</strong>
+                                                <span class="review-project">Lifestyle-Shooting für Startup</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-rating">★★★★☆</div>
+                                    </div>
+                                    <p class="review-text">„Tolle Bilder und angenehme Zusammenarbeit. Ein Stern Abzug nur, weil die Lieferung etwas länger dauerte als geplant – aber die Qualität stimmt!"</p>
+                                    <span class="review-date">November 2024</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="creator-profile-right">
+                        <!-- Quick Info -->
+                        <div class="profile-card">
+                            <h3>Auf einen Blick</h3>
+                            <ul class="quick-info-list">
+                                <li>
+                                    <span class="quick-info-label">Antwortzeit</span>
+                                    <span class="quick-info-value">~2 Stunden</span>
+                                </li>
+                                <li>
+                                    <span class="quick-info-label">Projekte</span>
+                                    <span class="quick-info-value">47 abgeschlossen</span>
+                                </li>
+                                <li>
+                                    <span class="quick-info-label">Wiederbeauftragt</span>
+                                    <span class="quick-info-value">78%</span>
+                                </li>
+                                <li>
+                                    <span class="quick-info-label">Sprachen</span>
+                                    <span class="quick-info-value">DE, EN</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="profile-card">
+                            <h3>Spezialisierungen</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Produktfotografie</span>
+                                <span class="skill-tag">Food Photography</span>
+                                <span class="skill-tag">Lifestyle</span>
+                                <span class="skill-tag">E-Commerce</span>
+                                <span class="skill-tag">Social Media</span>
+                                <span class="skill-tag">Bildbearbeitung</span>
+                            </div>
+                        </div>
+
+                        <!-- Packages -->
+                        <div class="profile-card">
+                            <h3>Pakete & Preise</h3>
+                            <div class="packages-list">
+                                <div class="package-item">
+                                    <div class="package-header">
+                                        <span class="package-name">Starter</span>
+                                        <span class="package-price">ab CHF 450</span>
+                                    </div>
+                                    <p class="package-desc">5 bearbeitete Produktfotos, 1 Korrekturschleife</p>
+                                </div>
+                                <div class="package-item featured">
+                                    <div class="package-badge">Beliebt</div>
+                                    <div class="package-header">
+                                        <span class="package-name">Professional</span>
+                                        <span class="package-price">ab CHF 890</span>
+                                    </div>
+                                    <p class="package-desc">15 bearbeitete Produktfotos, 2 Korrekturschleifen, Social Media Versionen</p>
+                                </div>
+                                <div class="package-item">
+                                    <div class="package-header">
+                                        <span class="package-name">Enterprise</span>
+                                        <span class="package-price">ab CHF 1'500</span>
+                                    </div>
+                                    <p class="package-desc">30+ Fotos, unbegrenzte Korrekturen, alle Formate, Priorität</p>
+                                </div>
+                            </div>
+                            <p class="packages-note">Individuelle Angebote auf Anfrage möglich.</p>
+                        </div>
+
+                        <!-- Equipment -->
+                        <div class="profile-card">
+                            <h3>Equipment</h3>
+                            <ul class="equipment-list">
+                                <li>Sony A7 IV</li>
+                                <li>Diverse Festbrennweiten</li>
+                                <li>Professionelles Studioblitz-Setup</li>
+                                <li>Lightroom & Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content modal-large">
+            <button class="modal-close" onclick="closeContactModal()">×</button>
+            <h2>Sarah Keller anfragen</h2>
+            <p class="modal-subtitle">Beschreiben Sie kurz Ihr Projekt – Sarah meldet sich schnellstmöglich bei Ihnen.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="contactProject">Projekt auswählen</label>
+                    <select id="contactProject">
+                        <option value="">Neues Projekt erstellen</option>
+                        <option value="1">Instagram Content März</option>
+                        <option value="2">Produktfotos Sommerkollektion</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Ihre Nachricht</label>
+                    <textarea id="contactMessage" rows="4" placeholder="Hallo Sarah, ich suche eine Fotografin für..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contactBudget">Ungefähres Budget</label>
+                    <select id="contactBudget">
+                        <option value="">Bitte wählen</option>
+                        <option value="500-1000">CHF 500 – 1'000</option>
+                        <option value="1000-2500">CHF 1'000 – 2'500</option>
+                        <option value="2500-5000">CHF 2'500 – 5'000</option>
+                        <option value="5000+">Über CHF 5'000</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" onclick="closeContactModal()">Abbrechen</button>
+                    <button type="submit" class="btn btn-primary">Anfrage senden</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

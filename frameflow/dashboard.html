@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – FrameFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body">
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">▶</span>
+                FrameFlow
+            </a>
+            <div class="header-actions">
+                <button class="icon-btn" title="Benachrichtigungen">
+                    <span class="notification-badge">3</span>
+                    🔔
+                </button>
+                <div class="user-menu">
+                    <div class="user-avatar">AK</div>
+                    <span class="user-name">Anna König</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="sidebar-link active">
+                    <span class="sidebar-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="projekt-erstellen.html" class="sidebar-link">
+                    <span class="sidebar-icon">➕</span>
+                    Neues Projekt
+                </a>
+                <a href="matching.html" class="sidebar-link">
+                    <span class="sidebar-icon">👥</span>
+                    Creators
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">💬</span>
+                    Nachrichten
+                    <span class="sidebar-badge">2</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">📁</span>
+                    Dateien
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-icon">⚙️</span>
+                    Einstellungen
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content">
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div>
+                        <h1>Willkommen zurück, Anna!</h1>
+                        <p class="text-muted">Hier ist der Überblick über Ihre Projekte.</p>
+                    </div>
+                    <a href="projekt-erstellen.html" class="btn btn-primary">
+                        + Neues Projekt
+                    </a>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card-icon blue">📋</div>
+                        <div class="stat-card-content">
+                            <span class="stat-card-number">4</span>
+                            <span class="stat-card-label">Aktive Projekte</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon green">✓</div>
+                        <div class="stat-card-content">
+                            <span class="stat-card-number">12</span>
+                            <span class="stat-card-label">Abgeschlossen</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon orange">⏳</div>
+                        <div class="stat-card-content">
+                            <span class="stat-card-number">2</span>
+                            <span class="stat-card-label">Warten auf Feedback</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon purple">💬</div>
+                        <div class="stat-card-content">
+                            <span class="stat-card-number">5</span>
+                            <span class="stat-card-label">Neue Nachrichten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <section class="dashboard-section">
+                    <div class="section-title">
+                        <h2>Laufende Projekte</h2>
+                        <a href="#" class="link">Alle anzeigen →</a>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- Project Card 1 -->
+                        <a href="projekt-detail.html" class="project-card">
+                            <div class="project-card-header">
+                                <span class="project-type">📸 Fotografie</span>
+                                <span class="project-status status-progress">In Arbeit</span>
+                            </div>
+                            <h3 class="project-title">Produktfotos Frühlingskollektion</h3>
+                            <p class="project-description">Hochwertige Produktbilder für den Online-Shop, 15 Produkte, weisser Hintergrund.</p>
+                            <div class="project-meta">
+                                <div class="project-creator">
+                                    <div class="creator-mini-avatar">SK</div>
+                                    <span>Sarah Keller</span>
+                                </div>
+                                <span class="project-deadline">⏰ 15. Feb 2025</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65% abgeschlossen</span>
+                            </div>
+                        </a>
+
+                        <!-- Project Card 2 -->
+                        <a href="projekt-detail.html" class="project-card">
+                            <div class="project-card-header">
+                                <span class="project-type">🎬 Video</span>
+                                <span class="project-status status-review">Review</span>
+                            </div>
+                            <h3 class="project-title">Imagefilm Unternehmen</h3>
+                            <p class="project-description">2-minütiger Imagefilm für die Website und Social Media Kanäle.</p>
+                            <div class="project-meta">
+                                <div class="project-creator">
+                                    <div class="creator-mini-avatar">TM</div>
+                                    <span>Tim Müller</span>
+                                </div>
+                                <span class="project-deadline">⏰ 28. Feb 2025</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="progress-text">90% abgeschlossen</span>
+                            </div>
+                        </a>
+
+                        <!-- Project Card 3 -->
+                        <a href="projekt-detail.html" class="project-card">
+                            <div class="project-card-header">
+                                <span class="project-type">📱 Social Media</span>
+                                <span class="project-status status-new">Neu</span>
+                            </div>
+                            <h3 class="project-title">Instagram Content März</h3>
+                            <p class="project-description">12 Posts und 8 Stories für den Instagram-Kanal, inklusive Texte.</p>
+                            <div class="project-meta">
+                                <div class="project-creator">
+                                    <div class="creator-mini-avatar">?</div>
+                                    <span>Creator auswählen</span>
+                                </div>
+                                <span class="project-deadline">⏰ 1. März 2025</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span class="progress-text">10% abgeschlossen</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Tasks and Messages -->
+                <div class="dashboard-grid-2">
+                    <!-- Tasks -->
+                    <section class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Nächste Aufgaben</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="task-list">
+                                <li class="task-item priority-high">
+                                    <input type="checkbox" class="task-checkbox">
+                                    <div class="task-content">
+                                        <span class="task-title">Feedback für Imagefilm geben</span>
+                                        <span class="task-meta">Fällig: Heute</span>
+                                    </div>
+                                </li>
+                                <li class="task-item priority-medium">
+                                    <input type="checkbox" class="task-checkbox">
+                                    <div class="task-content">
+                                        <span class="task-title">Creator für Instagram Content wählen</span>
+                                        <span class="task-meta">Fällig: Morgen</span>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <input type="checkbox" class="task-checkbox">
+                                    <div class="task-content">
+                                        <span class="task-title">Rechnung Produktfotos freigeben</span>
+                                        <span class="task-meta">Fällig: 18. Feb</span>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <input type="checkbox" class="task-checkbox" checked>
+                                    <div class="task-content completed">
+                                        <span class="task-title">Briefing Frühlingskollektion erstellt</span>
+                                        <span class="task-meta">Erledigt</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Messages -->
+                    <section class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Letzte Nachrichten</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="message-list">
+                                <li class="message-item unread">
+                                    <div class="message-avatar">SK</div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="message-sender">Sarah Keller</span>
+                                            <span class="message-time">vor 2 Std.</span>
+                                        </div>
+                                        <p class="message-preview">Die ersten 5 Produktbilder sind fertig! Ich habe sie gerade hochgeladen...</p>
+                                    </div>
+                                </li>
+                                <li class="message-item unread">
+                                    <div class="message-avatar">TM</div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="message-sender">Tim Müller</span>
+                                            <span class="message-time">vor 5 Std.</span>
+                                        </div>
+                                        <p class="message-preview">Ich habe die letzte Version mit Ihren Änderungen hochgeladen. Bitte um Review...</p>
+                                    </div>
+                                </li>
+                                <li class="message-item">
+                                    <div class="message-avatar">FF</div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="message-sender">FrameFlow Team</span>
+                                            <span class="message-time">Gestern</span>
+                                        </div>
+                                        <p class="message-preview">Willkommen bei FrameFlow! Hier sind einige Tipps für Ihren Start...</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
