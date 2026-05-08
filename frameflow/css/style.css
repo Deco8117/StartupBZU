@@ -3081,6 +3081,262 @@ h6 { font-size: var(--font-size-base); }
     justify-content: flex-end;
 }
 
+
+/* =====================================================
+   Pricing & Monetization
+   ===================================================== */
+
+.pricing-section {
+    background: var(--color-white);
+}
+
+.pricing-model-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.pricing-model-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.pricing-card-intro {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-md);
+}
+
+.price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--color-gray-50);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.price-breakdown.large {
+    margin-top: 0;
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+    color: var(--color-gray-700);
+}
+
+.price-line.total {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-gray-200);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+}
+
+.pricing-note {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    margin: 0;
+}
+
+.pricing-benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    color: var(--color-gray-700);
+}
+
+.pricing-benefits-list li {
+    padding-left: 1rem;
+    position: relative;
+}
+
+.pricing-benefits-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+.pricing-inline-note {
+    background: rgba(37, 99, 235, 0.06);
+    color: var(--color-gray-700);
+    border: 1px solid rgba(37, 99, 235, 0.14);
+    border-radius: var(--radius-md);
+    padding: 0.9rem 1rem;
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+}
+
+.pricing-inline-note.compact {
+    margin: var(--spacing-lg);
+    margin-bottom: 0;
+}
+
+.pricing-calculator-card.inline {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.pricing-calculator-card label {
+    display: block;
+    margin: 0.75rem 0 0.35rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.pricing-calculator-card input {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+}
+
+.payment-breakdown-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: 0.85rem;
+}
+
+.payment-breakdown-line.total {
+    padding-top: 0.85rem;
+    margin-top: 0.85rem;
+    border-top: 1px solid var(--color-gray-200);
+    font-weight: 700;
+}
+
+.match-reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.match-reason {
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius-full);
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+.project-summary-card {
+    border: 1px solid var(--color-gray-200);
+    border-radius: 18px;
+    padding: 1.5rem;
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.project-summary-header {
+    margin-bottom: 1.25rem;
+}
+
+.project-summary-header h3 {
+    margin-top: 0.5rem;
+}
+
+.project-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.summary-description-box,
+.price-transparency-box {
+    padding: 1rem;
+    background: var(--color-gray-50);
+    border-radius: 14px;
+    margin-bottom: 1.25rem;
+}
+
+.price-transparency-box h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 0.5rem;
+}
+
+.recommended-creators {
+    margin-top: 1.5rem;
+}
+
+.recommended-creators h3 {
+    margin-bottom: 1rem;
+}
+
+.recommended-creators-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.recommended-creator-card {
+    border: 1px solid var(--color-gray-200);
+    border-radius: 16px;
+    padding: 1.25rem;
+    background: var(--color-white);
+}
+
+.recommended-creator-card h4 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.recommended-creator-card p {
+    color: var(--color-gray-500);
+    margin-bottom: 0.75rem;
+}
+
+.recommended-points li {
+    font-size: 0.95rem;
+    color: var(--color-gray-700);
+    margin-bottom: 0.4rem;
+}
+
+.action-alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.action-alert-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.action-alert-content p {
+    margin: 0.25rem 0 0;
+    color: var(--color-gray-600);
+}
+
+
 /* =====================================================
    Responsive Design
    ===================================================== */
