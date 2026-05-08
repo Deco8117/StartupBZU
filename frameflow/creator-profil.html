@@ -34,7 +34,7 @@
                     <span class="sidebar-icon">📊</span>
                     Dashboard
                 </a>
-                <a href="projekt-erstellen.html" class="sidebar-link">
+                <a href="projekte-erstellen.html" class="sidebar-link">
                     <span class="sidebar-icon">➕</span>
                     Neues Projekt
                 </a>
@@ -238,7 +238,7 @@
                                 <div class="package-item">
                                     <div class="package-header">
                                         <span class="package-name">Starter</span>
-                                        <span class="package-price">ab CHF 450</span>
+                                        <span class="package-price">ab CHF 518</span>
                                     </div>
                                     <p class="package-desc">5 bearbeitete Produktfotos, 1 Korrekturschleife</p>
                                 </div>
@@ -246,19 +246,63 @@
                                     <div class="package-badge">Beliebt</div>
                                     <div class="package-header">
                                         <span class="package-name">Professional</span>
-                                        <span class="package-price">ab CHF 890</span>
+                                        <span class="package-price">ab CHF 1'024</span>
                                     </div>
                                     <p class="package-desc">15 bearbeitete Produktfotos, 2 Korrekturschleifen, Social Media Versionen</p>
                                 </div>
                                 <div class="package-item">
                                     <div class="package-header">
                                         <span class="package-name">Enterprise</span>
-                                        <span class="package-price">ab CHF 1'500</span>
+                                        <span class="package-price">ab CHF 1'725</span>
                                     </div>
                                     <p class="package-desc">30+ Fotos, unbegrenzte Korrekturen, alle Formate, Priorität</p>
                                 </div>
                             </div>
-                            <p class="packages-note">Individuelle Angebote auf Anfrage möglich.</p>
+                            <p class="packages-note">Alle Paketpreise verstehen sich als Endpreise für den Kunden.</p>
+                        </div>
+
+                        <div class="profile-card">
+                            <h3>Transparente Preisstruktur</h3>
+                            <p class="pricing-card-intro">Der Kunde sieht immer den Gesamtpreis. Das Honorar des Creators und die Plattformgebühr von FrameFlow sind bereits enthalten.</p>
+                            <div class="price-breakdown">
+                                <div class="price-line">
+                                    <span>Creator Honorar</span>
+                                    <strong>CHF 400</strong>
+                                </div>
+                                <div class="price-line">
+                                    <span>FrameFlow Plattformgebühr 15%</span>
+                                    <strong>CHF 60</strong>
+                                </div>
+                                <div class="price-line total">
+                                    <span>Gesamtpreis</span>
+                                    <strong>CHF 460</strong>
+                                </div>
+                            </div>
+                            <p class="pricing-note">Nach Projektabschluss erhält der Creator sein Honorar. Die Plattformgebühr verbleibt bei FrameFlow.</p>
+                        </div>
+
+                        <div class="profile-card">
+                            <h3>Preisrechner</h3>
+                            <div class="pricing-calculator-card inline">
+                                <label for="creatorPrice">Creator Preis in CHF</label>
+                                <input type="number" id="creatorPrice" value="400" min="0">
+                                <label for="platformFee">Plattformgebühr in %</label>
+                                <input type="number" id="platformFee" value="15" min="0">
+                                <div class="price-breakdown" id="dynamicPriceBreakdown">
+                                    <div class="price-line">
+                                        <span>Creator Honorar</span>
+                                        <strong id="creatorAmount">CHF 400.00</strong>
+                                    </div>
+                                    <div class="price-line">
+                                        <span>FrameFlow Gebühr</span>
+                                        <strong id="platformAmount">CHF 60.00</strong>
+                                    </div>
+                                    <div class="price-line total">
+                                        <span>Gesamtpreis</span>
+                                        <strong id="totalAmount">CHF 460.00</strong>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Equipment -->
