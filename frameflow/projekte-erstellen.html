@@ -34,7 +34,7 @@
                     <span class="sidebar-icon">📊</span>
                     Dashboard
                 </a>
-                <a href="projekt-erstellen.html" class="sidebar-link active">
+                <a href="projekte-erstellen.html" class="sidebar-link active">
                     <span class="sidebar-icon">➕</span>
                     Neues Projekt
                 </a>
@@ -274,39 +274,85 @@
                     <!-- Step 4: Summary -->
                     <div class="form-step-content" data-step="4">
                         <div class="form-card">
-                            <h2>Zusammenfassung</h2>
-                            <p class="form-card-subtitle">Prüfen Sie Ihre Angaben bevor Sie das Projekt absenden.</p>
+                            <h2>Projektübersicht</h2>
+                            <p class="form-card-subtitle">Prüfen Sie Ihre Angaben und sehen Sie passende Creator für Ihr Projekt.</p>
 
-                            <div class="summary-section">
-                                <h3>Grundlagen</h3>
-                                <div class="summary-grid">
-                                    <div class="summary-item">
-                                        <span class="summary-label">Projektname</span>
-                                        <span class="summary-value" id="summaryName">–</span>
-                                    </div>
-                                    <div class="summary-item">
+                            <div class="project-summary-card">
+                                <div class="project-summary-header">
+                                    <span class="project-type-badge">📋 Projektanfrage</span>
+                                    <h3 id="summaryName">–</h3>
+                                </div>
+
+                                <div class="project-summary-grid">
+                                    <div>
                                         <span class="summary-label">Projektart</span>
-                                        <span class="summary-value" id="summaryType">–</span>
+                                        <strong id="summaryType">–</strong>
                                     </div>
-                                    <div class="summary-item">
+                                    <div>
                                         <span class="summary-label">Budget</span>
-                                        <span class="summary-value" id="summaryBudget">–</span>
+                                        <strong id="summaryBudget">–</strong>
                                     </div>
-                                    <div class="summary-item">
+                                    <div>
                                         <span class="summary-label">Deadline</span>
-                                        <span class="summary-value" id="summaryDeadline">–</span>
+                                        <strong id="summaryDeadline">–</strong>
+                                    </div>
+                                    <div>
+                                        <span class="summary-label">Status</span>
+                                        <strong>Bereit für Matching</strong>
+                                    </div>
+                                </div>
+
+                                <div class="summary-description-box">
+                                    <span class="summary-label">Beschreibung</span>
+                                    <p id="summaryDescription">–</p>
+                                </div>
+                            </div>
+
+                            <div class="price-transparency-box">
+                                <h3>Transparente Preislogik</h3>
+                                <p>Der Creator definiert sein Honorar. FrameFlow ergänzt darauf eine Plattformgebühr von 15 Prozent. Der Kunde sieht immer den Gesamtpreis.</p>
+                                <div class="price-breakdown">
+                                    <div class="price-line">
+                                        <span>Beispiel Creator Honorar</span>
+                                        <strong>CHF 400</strong>
+                                    </div>
+                                    <div class="price-line">
+                                        <span>FrameFlow Plattformgebühr 15%</span>
+                                        <strong>CHF 60</strong>
+                                    </div>
+                                    <div class="price-line total">
+                                        <span>Beispiel Gesamtpreis</span>
+                                        <strong>CHF 460</strong>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="summary-section">
-                                <h3>Beschreibung</h3>
-                                <p class="summary-text" id="summaryDescription">–</p>
-                            </div>
+                            <div class="recommended-creators">
+                                <h3>Empfohlene Creator</h3>
 
-                            <div class="summary-section">
-                                <h3>Dateien</h3>
-                                <p class="summary-text">2 Dateien hochgeladen</p>
+                                <div class="recommended-creators-grid">
+                                    <div class="recommended-creator-card">
+                                        <div class="creator-avatar-card"><span>SK</span></div>
+                                        <h4>Sarah Keller</h4>
+                                        <p>Produktfotografie • Zürich</p>
+                                        <ul class="recommended-points">
+                                            <li>Passt zu Produktshootings</li>
+                                            <li>Im gewählten Budgetbereich</li>
+                                            <li>Verfügbar nächste Woche</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="recommended-creator-card">
+                                        <div class="creator-avatar-card"><span>TM</span></div>
+                                        <h4>Tim Müller</h4>
+                                        <p>Video und Social Content • Bern</p>
+                                        <ul class="recommended-points">
+                                            <li>Stark für kurze Kampagnenvideos</li>
+                                            <li>Erfahrung mit KMU</li>
+                                            <li>Schnelle Umsetzung</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="form-group">
@@ -322,6 +368,7 @@
                             <button type="submit" class="btn btn-primary btn-large">Projekt anfragen</button>
                         </div>
                     </div>
+
                 </form>
             </div>
         </main>
